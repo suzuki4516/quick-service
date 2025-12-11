@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USEN PAY - マルチ決済サービス</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/usenpay.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="usenpay-header">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                サービス一覧に戻る
+            </a>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="usenpay-hero">
+        <div class="container">
+            <div class="usenpay-hero-image">
+                <img src="image/usen_pay_logo.png" alt="USEN PAY">
+            </div>
+            <div class="usenpay-hero-content">
+                <h1 class="usenpay-hero-title">USEN PAY</h1>
+                <p class="usenpay-hero-subtitle">月額0円のマルチ決済端末</p>
+                <div class="usenpay-hero-badges">
+                    <span class="badge">U-NEXT HOLDINGSグループ</span>
+                    <span class="badge">主要56ブランド対応</span>
+                    <span class="badge">プリンター内蔵</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- サービス概要 -->
+    <section class="usenpay-section">
+        <div class="container">
+            <h2 class="section-title">USEN PAYとは</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                            <line x1="1" y1="10" x2="23" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3>マルチ決済対応</h3>
+                    <p>クレジットカード、電子マネー、QRコード決済に1台で対応。主要56ブランドをカバーします。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3>月額0円</h3>
+                    <p>端末利用料は月額0円。決済手数料のみで導入できるため、コストを抑えて始められます。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 6 2 18 2 18 9"/>
+                            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+                            <rect x="6" y="14" width="12" height="8"/>
+                        </svg>
+                    </div>
+                    <h3>プリンター内蔵</h3>
+                    <p>レシートプリンターを内蔵。別途プリンターを用意する必要がありません。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 決済手数料 -->
+    <section class="usenpay-section bg-gray">
+        <div class="container">
+            <h2 class="section-title">決済手数料</h2>
+            <p class="section-desc">業界最安水準の決済手数料</p>
+
+            <div class="fee-highlight">
+                <div class="fee-card main">
+                    <div class="fee-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                            <line x1="1" y1="10" x2="23" y2="10"/>
+                        </svg>
+                    </div>
+                    <div class="fee-content">
+                        <span class="fee-label">Visa / Mastercard</span>
+                        <span class="fee-value">2.99<small>%</small></span>
+                        <span class="fee-note">決済手数料率</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fee-grid">
+                <div class="fee-item">
+                    <span class="fee-item-label">月額利用料</span>
+                    <span class="fee-item-value">0円</span>
+                </div>
+                <div class="fee-item">
+                    <span class="fee-item-label">初期費用</span>
+                    <span class="fee-item-value">0円</span>
+                </div>
+                <div class="fee-item">
+                    <span class="fee-item-label">契約期間</span>
+                    <span class="fee-item-value">縛りなし</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 対応決済ブランド -->
+    <section class="usenpay-section">
+        <div class="container">
+            <h2 class="section-title">対応決済ブランド</h2>
+            <p class="section-desc">主要56ブランドに対応</p>
+
+            <div class="brand-categories">
+                <div class="brand-category">
+                    <h3>クレジットカード</h3>
+                    <div class="brand-list">
+                        <span class="brand-item">Visa</span>
+                        <span class="brand-item">Mastercard</span>
+                        <span class="brand-item">JCB</span>
+                        <span class="brand-item">American Express</span>
+                        <span class="brand-item">Diners Club</span>
+                        <span class="brand-item">Discover</span>
+                    </div>
+                </div>
+
+                <div class="brand-category">
+                    <h3>電子マネー</h3>
+                    <div class="brand-list">
+                        <span class="brand-item">交通系IC</span>
+                        <span class="brand-item">iD</span>
+                        <span class="brand-item">QUICPay</span>
+                        <span class="brand-item">楽天Edy</span>
+                        <span class="brand-item">nanaco</span>
+                        <span class="brand-item">WAON</span>
+                    </div>
+                </div>
+
+                <div class="brand-category">
+                    <h3>QRコード決済</h3>
+                    <div class="brand-list">
+                        <span class="brand-item">PayPay</span>
+                        <span class="brand-item">LINE Pay</span>
+                        <span class="brand-item">楽天ペイ</span>
+                        <span class="brand-item">d払い</span>
+                        <span class="brand-item">au PAY</span>
+                        <span class="brand-item">メルペイ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 端末の特徴 -->
+    <section class="usenpay-section bg-gray">
+        <div class="container">
+            <h2 class="section-title">端末の特徴</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                            <line x1="12" y1="18" x2="12.01" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3>タブレット不要</h3>
+                    <p>端末単体で完結するため、別途タブレットを用意する必要がありません。</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/>
+                        </svg>
+                    </div>
+                    <h3>Wi-Fi接続</h3>
+                    <p>インターネット環境があればすぐに利用可能。場所を選ばず設置できます。</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 6 2 18 2 18 9"/>
+                            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+                            <rect x="6" y="14" width="12" height="8"/>
+                        </svg>
+                    </div>
+                    <h3>レシート印刷</h3>
+                    <p>プリンター内蔵でレシートをその場で発行。追加機器は不要です。</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>セキュリティ</h3>
+                    <p>PCI DSS準拠の安全な決済環境。お客様のカード情報を安全に処理します。</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3>最短翌日入金</h3>
+                    <p>売上金は最短翌日に入金。キャッシュフローを改善します。</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>管理画面</h3>
+                    <p>売上管理や決済履歴をWebの管理画面から確認できます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 営業ポイント -->
+    <section class="usenpay-section">
+        <div class="container">
+            <h2 class="section-title">営業時のポイント</h2>
+
+            <div class="sales-points">
+                <div class="sales-point">
+                    <div class="point-number">01</div>
+                    <div class="point-content">
+                        <h3>月額0円を強調</h3>
+                        <p>端末利用料が月額0円なので、初期投資を抑えてキャッシュレス決済を始められます。決済手数料のみの明瞭な料金体系をアピールしましょう。</p>
+                    </div>
+                </div>
+
+                <div class="sales-point">
+                    <div class="point-number">02</div>
+                    <div class="point-content">
+                        <h3>決済手数料率2.99%</h3>
+                        <p>Visa/Mastercardの決済手数料率2.99%は業界最安水準。他社からの乗り換えでコスト削減を提案できます。</p>
+                    </div>
+                </div>
+
+                <div class="sales-point">
+                    <div class="point-number">03</div>
+                    <div class="point-content">
+                        <h3>56ブランド対応で機会損失を防ぐ</h3>
+                        <p>クレジットカード、電子マネー、QRコードの主要56ブランドに対応。お客様の「使いたい決済方法がない」を防ぎ、売上機会を逃しません。</p>
+                    </div>
+                </div>
+
+                <div class="sales-point">
+                    <div class="point-number">04</div>
+                    <div class="point-content">
+                        <h3>契約期間の縛りなし</h3>
+                        <p>契約期間の縛りがないため、導入のハードルが低いです。「まずは試してみたい」というお客様にも提案しやすいのがポイントです。</p>
+                    </div>
+                </div>
+
+                <div class="sales-point">
+                    <div class="point-number">05</div>
+                    <div class="point-content">
+                        <h3>利用見込みのある顧客へ</h3>
+                        <p>USEN PAYの利用が見込めない顧客への販売は禁止されています。月間50万円以上のカード決済売上が見込めるお客様に提案しましょう。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 対象顧客 -->
+    <section class="usenpay-section bg-gray">
+        <div class="container">
+            <h2 class="section-title">こんなお客様に最適</h2>
+
+            <div class="target-grid">
+                <div class="target-card">
+                    <div class="target-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                            <line x1="6" y1="1" x2="6" y2="4"/>
+                            <line x1="10" y1="1" x2="10" y2="4"/>
+                            <line x1="14" y1="1" x2="14" y2="4"/>
+                        </svg>
+                    </div>
+                    <h3>飲食店</h3>
+                    <p>キャッシュレス決済でお会計をスムーズに。インバウンド対応にも最適です。</p>
+                </div>
+
+                <div class="target-card">
+                    <div class="target-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                    </div>
+                    <h3>小売店・ショップ</h3>
+                    <p>多様な決済手段でお客様の利便性を向上。売上機会を逃しません。</p>
+                </div>
+
+                <div class="target-card">
+                    <div class="target-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                    </div>
+                    <h3>美容院・サロン</h3>
+                    <p>高単価のサービスにカード決済は必須。お客様の支払い負担を軽減します。</p>
+                </div>
+
+                <div class="target-card">
+                    <div class="target-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                    <h3>クリニック・医院</h3>
+                    <p>自費診療の支払いにクレジットカード対応で患者様の利便性を向上させます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 提供エリア -->
+    <section class="usenpay-section">
+        <div class="container">
+            <h2 class="section-title">提供エリア</h2>
+            <div class="area-info">
+                <div class="area-map">
+                    <div class="area-list">
+                        <span class="area-item">全国対応</span>
+                    </div>
+                </div>
+                <p class="area-note">※インターネット環境（Wi-Fi）が必要です</p>
+                <p class="area-note">※審査があります</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- よくある質問 -->
+    <section class="usenpay-section bg-gray">
+        <div class="container">
+            <h2 class="section-title">よくある質問</h2>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <span class="q-mark">Q</span>
+                        本当に月額0円で利用できますか？
+                    </h3>
+                    <p class="faq-answer">
+                        <span class="a-mark">A</span>
+                        はい、端末利用料は月額0円です。発生するのは決済手数料のみで、Visa/Mastercardは2.99%となっています。
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <span class="q-mark">Q</span>
+                        導入に必要なものは何ですか？
+                    </h3>
+                    <p class="faq-answer">
+                        <span class="a-mark">A</span>
+                        インターネット環境（Wi-Fi）があれば導入可能です。端末はプリンター内蔵のため、別途機器を用意する必要はありません。
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <span class="q-mark">Q</span>
+                        契約期間の縛りはありますか？
+                    </h3>
+                    <p class="faq-answer">
+                        <span class="a-mark">A</span>
+                        契約期間の縛りはありません。ただし、利用が見込めない場合は稼働停止等の措置が取られる場合があります。
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <span class="q-mark">Q</span>
+                        売上はいつ入金されますか？
+                    </h3>
+                    <p class="faq-answer">
+                        <span class="a-mark">A</span>
+                        最短翌日入金に対応しています。詳細な入金サイクルは契約時にご確認ください。
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <span class="q-mark">Q</span>
+                        審査はありますか？
+                    </h3>
+                    <p class="faq-answer">
+                        <span class="a-mark">A</span>
+                        はい、導入には審査があります。至近1ヵ月分のクレジットカード決済の売上明細の提出が必要です。月間50万円以上のカード決済売上が目安となります。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="usenpay-cta">
+        <div class="container">
+            <h2>USEN PAYでキャッシュレス決済を始めよう</h2>
+            <p>詳しい資料や見積もりについては、担当営業までお問い合わせください</p>
+            <a href="index.html" class="cta-button">サービス一覧に戻る</a>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="usenpay-footer">
+        <div class="container">
+            <p>&copy; USEN PAY - 株式会社USEN（U-NEXT HOLDINGSグループ）</p>
+        </div>
+    </footer>
+</body>
+</html>
