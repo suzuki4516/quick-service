@@ -1,29 +1,106 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サービス紹介LP</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>法人向けサービス一覧 | 電力・ガス・通信・決済・採用支援</title>
+    <meta name="description" content="法人向けサービスを一覧でご紹介。電力（U-POWER）、ガス（USEN GAS）、光回線、Wi-Fi、決済サービス、採用支援など、ビジネスに必要なサービスをワンストップでご提供。コスト削減と業務効率化を実現します。">
+    <meta name="keywords" content="法人向けサービス,電力削減,ガス料金削減,光回線,Wi-Fi,決済サービス,採用支援,USEN,U-POWER">
+    <meta name="author" content="Quick Service">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://example.com/quick-service/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/quick-service/">
+    <meta property="og:title" content="法人向けサービス一覧 | 電力・ガス・通信・決済・採用支援">
+    <meta property="og:description" content="法人向けサービスを一覧でご紹介。電力、ガス、光回線、Wi-Fi、決済サービス、採用支援など、ビジネスに必要なサービスをワンストップでご提供。">
+    <meta property="og:image" content="https://example.com/quick-service/image/ogp.jpg">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="Quick Service">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://example.com/quick-service/">
+    <meta name="twitter:title" content="法人向けサービス一覧 | 電力・ガス・通信・決済・採用支援">
+    <meta name="twitter:description" content="法人向けサービスを一覧でご紹介。電力、ガス、光回線、Wi-Fi、決済サービス、採用支援など、ビジネスに必要なサービスをワンストップでご提供。">
+    <meta name="twitter:image" content="https://example.com/quick-service/image/ogp.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "法人向けサービス一覧",
+        "description": "電力・ガス・通信・決済・採用支援など法人向けサービス",
+        "numberOfItems": 12,
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Webサイト制作",
+                "description": "高品質サイトを低価格で提供"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "WEBシステム開発",
+                "description": "オーダーメイドのシステム構築"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "U-POWER",
+                "description": "電気料金を下げてCO2削減に貢献"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "USEN GAS",
+                "description": "ガス料金を最大5%削減"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "USEN光 plus",
+                "description": "高速光回線を低コストで導入"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link" aria-label="メインコンテンツへスキップ">メインコンテンツへ</a>
+
     <!-- ヒーローセクション -->
-    <section class="hero">
+    <header class="hero" role="banner">
         <div class="hero-content">
-            <h1 class="hero-title">サービス紹介</h1>
+            <h1 class="hero-title">法人向けサービス紹介</h1>
             <p class="hero-desc">お客様のビジネスを支える多彩なサービス</p>
         </div>
-    </section>
+    </header>
 
-    <!-- ストック型案件セクション -->
-    <section class="section-header">
-        <div class="container">
-            <span class="section-label">ストック型案件</span>
-        </div>
-    </section>
+    <main id="main-content" role="main">
+        <!-- ストック型案件セクション -->
+        <section class="section-header" aria-labelledby="stock-section-title">
+            <div class="container">
+                <h2 id="stock-section-title" class="section-label">ストック型案件</h2>
+            </div>
+        </section>
 
     <!-- 正方形グリッド -->
     <section class="service-grid-section">
@@ -37,7 +114,7 @@
                     </div>
                     <div class="grid-item-main">
                         <div class="grid-item-image" style="display: flex; align-items: center; justify-content: center;">
-                            <img src="image/WebSite.png" alt="Webサイト制作" style="max-width: 70%; height: auto;">
+                            <img src="image/WebSite.png" alt="Webサイト制作サービスのイメージ" loading="lazy" width="200" height="150" style="max-width: 70%; height: auto;">
                         </div>
                         <div class="grid-item-content">
                             <div class="grid-item-logo">
@@ -79,7 +156,7 @@
                     </div>
                     <div class="grid-item-main">
                         <div class="grid-item-image" style="display: flex; align-items: center; justify-content: center;">
-                            <img src="image/websystem.png" alt="WEBシステム開発" style="max-width: 70%; height: auto;">
+                            <img src="image/websystem.png" alt="WEBシステム開発サービスのイメージ" loading="lazy" width="200" height="150" style="max-width: 70%; height: auto;">
                         </div>
                         <div class="grid-item-content">
                             <div class="grid-item-logo">
@@ -117,12 +194,12 @@
         </div>
     </section>
 
-    <!-- ショット型案件セクション -->
-    <section class="section-header">
-        <div class="container">
-            <span class="section-label">ショット型案件</span>
-        </div>
-    </section>
+        <!-- ショット型案件セクション -->
+        <section class="section-header" aria-labelledby="shot-section-title">
+            <div class="container">
+                <h2 id="shot-section-title" class="section-label">ショット型案件</h2>
+            </div>
+        </section>
 
     <!-- ショット型グリッド -->
     <section class="service-grid-section">
@@ -136,7 +213,7 @@
                     </div>
                     <div class="grid-item-main">
                         <div class="grid-item-image">
-                            <img src="image/u-power.png" alt="U-POWER グリーン電力">
+                            <img src="image/u-power.png" alt="U-POWER グリーン電力サービスロゴ" loading="lazy" width="200" height="150">
                         </div>
                         <div class="grid-item-content">
                             <div class="grid-item-logo">
@@ -174,7 +251,7 @@
                     </div>
                     <div class="grid-item-main">
                         <div class="grid-item-image">
-                            <img src="image/usen-gas.jpg" alt="USEN GAS 都市ガスサービス">
+                            <img src="image/usen-gas.jpg" alt="USEN GAS 都市ガスサービスロゴ" loading="lazy" width="200" height="150">
                         </div>
                         <div class="grid-item-content">
                             <div class="grid-item-logo">
@@ -213,7 +290,7 @@
                     </div>
                     <div class="grid-item-main">
                         <div class="grid-item-image" style="display: flex; align-items: center; justify-content: center;">
-                            <img src="image/usenhikari.png" alt="USEN光 plus" style="max-width: 60%; height: auto;">
+                            <img src="image/usenhikari.png" alt="USEN光 plus 光回線サービスロゴ" loading="lazy" width="200" height="150" style="max-width: 60%; height: auto;">
                         </div>
                         <div class="grid-item-content">
                             <div class="grid-item-logo">
@@ -253,8 +330,8 @@
                     </div>
                     <div class="grid-item-main">
                         <div class="grid-item-image" style="display: flex; align-items: center; justify-content: center; gap: 16px; padding: 10px;">
-                            <img src="image/usen-hurettu.png" alt="USEN NETWORKS" style="max-width: 45%; height: auto; object-fit: contain;">
-                            <img src="image/flets_hikari.png" alt="フレッツ光" style="max-width: 45%; height: auto; object-fit: contain;">
+                            <img src="image/usen-hurettu.png" alt="USEN NETWORKSロゴ" loading="lazy" width="100" height="50" style="max-width: 45%; height: auto; object-fit: contain;">
+                            <img src="image/flets_hikari.png" alt="フレッツ光ロゴ" loading="lazy" width="100" height="50" style="max-width: 45%; height: auto; object-fit: contain;">
                         </div>
                         <div class="grid-item-content">
                             <div class="grid-item-logo">
@@ -294,7 +371,7 @@
                     </div>
                     <div class="grid-item-main">
                         <div class="grid-item-image" style="display: flex; align-items: center; justify-content: center;">
-                            <img src="image/usennet.png" alt="USEN NET" style="max-width: 60%; height: auto;">
+                            <img src="image/usennet.png" alt="USEN NET プロバイダサービスロゴ" loading="lazy" width="200" height="150" style="max-width: 60%; height: auto;">
                         </div>
                         <div class="grid-item-content">
                             <div class="grid-item-logo">
@@ -334,7 +411,7 @@
                     </div>
                     <div class="grid-item-main">
                         <div class="grid-item-image" style="display: flex; align-items: center; justify-content: center;">
-                            <img src="image/uspotbiz.png" alt="U-SPOT biz" style="max-width: 60%; height: auto;">
+                            <img src="image/uspotbiz.png" alt="U-SPOT biz 業務用Wi-Fiサービスロゴ" loading="lazy" width="200" height="150" style="max-width: 60%; height: auto;">
                         </div>
                         <div class="grid-item-content">
                             <div class="grid-item-logo">
@@ -374,7 +451,7 @@
                     </div>
                     <div class="grid-item-main">
                         <div class="grid-item-image" style="display: flex; align-items: center; justify-content: center;">
-                            <img src="image/usen-hurettu.png" alt="求人ボックス" style="max-width: 60%; height: auto;">
+                            <img src="image/usen-hurettu.png" alt="求人ボックス 採用サービスロゴ" loading="lazy" width="200" height="150" style="max-width: 60%; height: auto;">
                         </div>
                         <div class="grid-item-content">
                             <div class="grid-item-logo">
@@ -415,7 +492,7 @@
                     </div>
                     <div class="grid-item-main">
                         <div class="grid-item-image" style="display: flex; align-items: center; justify-content: center;">
-                            <img src="image/usen-ubereats.jpg" alt="Uber Eats" style="max-width: 70%; height: auto;">
+                            <img src="image/usen-ubereats.jpg" alt="Uber Eats デリバリーサービスロゴ" loading="lazy" width="200" height="150" style="max-width: 70%; height: auto;">
                         </div>
                         <div class="grid-item-content">
                             <div class="grid-item-logo">
@@ -455,7 +532,7 @@
                     </div>
                     <div class="grid-item-main">
                         <div class="grid-item-image">
-                            <img src="image/usen4.jpg" alt="USEN 4商材">
+                            <img src="image/usen4.jpg" alt="USEN 4商材 トスアップサービスイメージ" loading="lazy" width="200" height="150">
                         </div>
                         <div class="grid-item-content">
                             <div class="grid-item-logo">
@@ -490,9 +567,15 @@
                 </a>
 
             </div>
-        </div>
-    </section>
+            </div>
+        </section>
+    </main>
 
-    <script src="js/script.js"></script>
+    <!-- Footer -->
+    <footer role="contentinfo" style="padding: 40px 24px; text-align: center; background: var(--gray-100); color: var(--text-light); font-size: 0.85rem;">
+        <p>&copy; 2024 Quick Service. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
 </body>
 </html>
